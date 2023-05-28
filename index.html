@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Les16</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="source-box">
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+        </div>
+        <div class="operation-box">
+            <button class="btn edit-btn">Edit</button>
+            <button class="btn style-btn">Style</button>
+        </div>
+        <div class="edit-box">
+            <div class="manual-edit">
+                <textarea class="edit-txt"></textarea><br>
+                <button class="btn add-btn">Add</button>
+                <button class="btn save-btn">Save</button>
+            </div>
+            <div class="style-box">
+                <div class="style-edit">
+                    <div class="style-fs">
+                        <h3>Font Size:</h3>
+                        <input type="radio" value="12px" name="fs-radio">12px
+                        <input type="radio" value="14px" name="fs-radio">14px
+                        <input type="radio" value="16px" name="fs-radio" checked>16px
+                        <input type="radio" value="18px" name="fs-radio">18px
+                        <input type="radio" value="20px" name="fs-radio">20px
+                    </div><br>
+                    <div class="style-ff">
+                        <h3>Font Family:</h3>
+                        <select class="style-opt">
+                            <option value="">Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospace">monospace</option>
+                            <option value="sans-serif">sans-serif</option>
+                        </select>
+                    </div><br>
+                    <div class="style-fc">
+                        <h3>Colors:</h3>
+                        <button class="btn color-btn">Color of Text</button>
+                        <button class="btn bgcolor-btn">Background color</button>
+                    </div>
+                    <div class="style-fst">
+                        <h3>Style:</h3>
+                        <label for="bold" class="chk-lab">
+                            <input type="checkbox" class="bold" id="bold"> Bold text </label>
+                        <label for="cursive" class="chk-lab">
+                            <input type="checkbox" class="cursive" id="cursive"> Cursive text</label>
+                    </div><br>
+                </div>
+                <div class="color-pannel">
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                    <div class="color-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="create-box">
+            <div class="close-btn">X</div>
+            <h1>Choose what you want:</h1>
+            <label for="table" class="chk-lab">
+                <input type="radio" class="cr-table" name="create" id="table"> Table </label>
+            <label for="list" class="chk-lab">
+                <input type="radio" class="cr-list" name="create" id="list"> List</label>
+            <div class="create-table">
+                <label>Count TR:</label>
+                <input type="number" placeholder="Count TR:" min="1" max="40">
+
+                <label>Count TD:</label>
+                <input type="number" placeholder="Count TD:" min="1" max="40">
+
+                <h3>Add style to your table:</h3>
+
+                <label>Width of TD:</label>
+                <input type="number" placeholder="Width of TD:" min="1" max="40">
+
+                <label>Height of TD:</label>
+                <input type="number" placeholder="Height of TD:" min="1" max="40">
+
+                <label>Width of border:</label>
+                <input type="number" placeholder="Width:" min="1" max="10" style="width:110px">
+
+                <label>Type of border:</label>
+                <select name="typeBord">
+                    <option value="solid" selected>solid</option>
+                    <option value="double">double</option>
+                    <option value="dashed">dashed</option>
+                </select>
+
+                <label>Color of border:</label>
+                <select name="colorBord">
+                    <option value="black" selected>black</option>
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                </select>
+
+
+                <input type="button" value="Create table" class="btn create-btn">
+            </div>
+
+            <div class="create-list">
+                <label>Count Li:</label>
+                <input type="number" placeholder="Count Li:" min="1" max="10" name="liCount">
+
+                <label>Type of marks:</label>
+                <select name="mark">
+                    <option value="circle" selected>circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+
+
+                <input type="button" value="Create list" class="btn createLi-btn">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

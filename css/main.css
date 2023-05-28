@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    width: 100%;
+    color: brown;
+}
+
+label {
+    display: block;
+    width: 130px;
+    line-height: 30px;
+}
+
+.chk-lab {
+    display: inline;
+    width: auto;
+    line-height: normal;
+    cursor: pointer;
+}
+
+select,
+input[type=number] {
+    height: 25px;
+    width: 120px;
+    border-radius: 3px;
+    margin: 3px;
+    border: none;
+}
+
+input[type=number] {
+    /* height: 25px; */
+    width: 80%;
+    /* border-radius: 3px; */
+    /* margin: 3px; */
+    /* border: none; */
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.source-box,
+.edit-box,
+.create-box {
+    height: 300px;
+    padding: 5px;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    border-radius: 3px;
+    color: white;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------manual edit*/
+.source-box {
+    overflow-y: scroll;
+}
+
+.edit-box textarea {
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border-radius: 3px;
+}
+
+.edit-box textarea:focus,
+input:focus {
+    outline-color: rgba(7, 163, 163, 0.747);
+}
+
+.manual-edit,
+.style-edit {
+    display: none;
+    height: 100%;
+}
+
+.operation-box {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.edit-btn {
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+.style-btn {
+    background-color: darkcyan;
+}
+
+.add-btn {
+    background-color: brown;
+}
+
+.save-btn,
+.create-btn,
+.createLi-btn {
+    background-color: forestgreen;
+}
+
+/*----------------------------------------------------style*/
+.color-btn,
+.bgcolor-btn {
+    width: auto;
+    background-color: slategray;
+    padding: 3px;
+}
+
+.style-box {
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+.color-pannel {
+    width: 180px;
+    height: 180px;
+    margin-left: 30%;
+    display: none;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    background-color: aqua;
+}
+
+/*--------------------------------------------------Add*/
+.create-box {
+    display: none;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: brown;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px dashed brown;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.create-table,
+.create-list {
+    width: 100%;
+    display: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.create-btn,
+.createLi-btn {
+    margin-top: 20px;
+    margin-right: 88%;
+    width: 80px;
+}
+
+.createLi-btn {
+    margin-top: 120px;
+}
+
+/*------------------------------------------------------------------*/
+.show {
+    display: block;
+}
+
+.showf {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
